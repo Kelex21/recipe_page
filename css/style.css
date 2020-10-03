@@ -2,157 +2,158 @@ html {
   box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
+  -o-box-sizing: border-box; }
 
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 img {
-  width: 100%;
-}
+  width: 100%; }
 
 body {
-  background-color: #ffffff;
-}
+  background-color: #ffffff; }
 
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .image {
   margin-top: 4rem;
-  width: 100%;
-}
-.image h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 48px;
-  color: #000000;
-}
-.image .paragraph {
-  display: flex;
-  margin: -2rem 0 2rem 0;
-  align-items: flex-start;
-  width: 45%;
-}
-.image .paragraph .drag {
-  margin-top: 0.8rem;
-  margin-right: 0.6rem;
-  transform: rotate(90deg);
-  color: #c4c4c4;
-}
-.image .paragraph p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 14px;
-  color: #4f4f4f;
-}
-.image img {
-  width: 100%;
-  height: 10%;
-  border-radius: 12px;
-}
+  width: 100%; }
+  .image h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000; }
+  .image .paragraph {
+    display: flex;
+    margin: -2rem 0 2rem 0;
+    align-items: flex-start;
+    width: 45%; }
+    .image .paragraph .drag {
+      margin-top: 0.8rem;
+      margin-right: 0.6rem;
+      transform: rotate(90deg);
+      color: #c4c4c4; }
+    .image .paragraph p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 14px;
+      color: #4f4f4f; }
+  .image img {
+    width: 100%;
+    height: 10%;
+    border-radius: 12px; }
 
 section {
   margin-top: 2.5rem;
   width: 100%;
+  display: flex; }
+  section .box-left {
+    width: 40%; }
+    section .box-left .title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 1rem; }
+    section .box-left .subtitle {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 18px;
+      color: #333333;
+      margin: 3rem 0 2rem 0; }
+    section .box-left .subtitle2 {
+      margin: 2rem 0 2.5rem 0; }
+    section .box-left .container .box {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0; }
+      section .box-left .container .box .cube {
+        position: absolute;
+        width: 21px;
+        align-self: flex-start;
+        height: 21px;
+        border: 1px solid #828282;
+        border-radius: 4px; }
+      section .box-left .container .box p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #333333;
+        margin-top: -0.1rem;
+        margin-left: 2.5rem; }
+        section .box-left .container .box p span {
+          font-weight: 700; }
+        section .box-left .container .box p .bold-light {
+          font-weight: 500; }
+  section .box-right {
+    width: 60%; }
+    section .box-right .container {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      float: right;
+      width: 216px;
+      height: 367px;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12); }
+      section .box-right .container .info {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem auto; }
+        section .box-right .container .info span {
+          color: #4f4f4f;
+          margin-right: 1rem;
+          font-size: 30px; }
+        section .box-right .container .info .box .title {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 10px;
+          color: #bdbdbd;
+          text-transform: uppercase; }
+        section .box-right .container .info .box .subtitle {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          color: #333333; }
+        section .box-right .container .info .select {
+          color: #f2994a; }
+
+.instructions {
   display: flex;
-}
-section .box-left {
-  width: 40%;
-}
-section .box-left .title {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 24px;
-  color: #333333;
-  margin-bottom: 1rem;
-}
-section .box-left .subtitle {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 18px;
-  color: #333333;
-  margin: 3rem 0 2rem 0;
-}
-section .box-left .subtitle2 {
-  margin: 2rem 0 2.5rem 0;
-}
-section .box-left .container .box {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-}
-section .box-left .container .box .cube {
-  position: absolute;
-  width: 21px;
-  align-self: flex-start;
-  height: 21px;
-  border: 1px solid #828282;
-  border-radius: 4px;
-}
-section .box-left .container .box p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #333333;
-  margin-top: -0.1rem;
-  margin-left: 2.5rem;
-}
-section .box-left .container .box p span {
-  font-weight: 700;
-}
-section .box-left .container .box p .bold-light {
-  font-weight: 500;
-}
-section .box-right {
-  width: 60%;
-}
-section .box-right .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: right;
-  width: 216px;
-  height: 367px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-section .box-right .container .info {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  margin: 0.2rem auto;
-}
-section .box-right .container .info span {
-  color: #4f4f4f;
-  margin-right: 1rem;
-  font-size: 30px;
-}
-section .box-right .container .info .box .title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 10px;
-  color: #bdbdbd;
-  text-transform: uppercase;
-}
-section .box-right .container .info .box .subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #333333;
-}
-section .box-right .container .info .select {
-  color: #f2994a;
-}
+  flex-direction: column; }
+  .instructions .title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 24px; }
+  .instructions .information .instruction {
+    display: flex; }
+    .instructions .information .instruction .box {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background-color: #f2994a;
+      position: absolute;
+      text-align: center;
+      color: #ffffff;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 24px; }
+    .instructions .information .instruction p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      font-style: normal; }
+      .instructions .information .instruction p span {
+        font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

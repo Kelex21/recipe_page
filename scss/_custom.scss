@@ -99,7 +99,8 @@ section {
                 }
                 p {
                     font-family: $montserrat;
-                    font-weight: normal;
+                    font-weight: 400;
+                    font-style: normal;
                     font-size: 16px;
                     color: $black2;
                     margin-top: -0.1rem;
@@ -109,6 +110,7 @@ section {
                     }
                     .bold-light {
                         font-weight: 500;
+                        font-style: italic;
                     }
                 }
             }
@@ -161,16 +163,21 @@ section {
 }
 
 .instructions {
+    margin-top: -1.5rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
     .title {
         font-family: $playfair_display;
         font-weight: 700;
         font-size: 24px;
+        color: $black2;
     }
     .information {
+        width: 40%;
         .instruction {
             display: flex;
+            align-items: flex-start;
             .box {
                 width: 36px;
                 height: 36px;
@@ -179,17 +186,150 @@ section {
                 position: absolute;
                 text-align: center;
                 color: $white;
+                margin-top: 1rem;
                 font-family: $playfair_display;
                 font-weight: 700;
                 font-size: 24px;
             }
             p {
                 font-family: $montserrat;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 16px;
-                font-style: normal;
+                margin-left: 3rem;
+                color: $black2;
                 span {
                     font-weight: 700;
+                }
+            }
+        }
+    }
+    .source {
+        margin-top: 3rem;
+        p {
+            font-family: $montserrat;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 16px;
+            color: $gray3;
+        }
+    }
+}
+
+footer {
+    margin: 8rem 0 2rem 0;
+    text-align: center;
+    p {
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        color: $gray4;
+        a {
+            color: $orange;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $deskto2) {
+    .container {
+        width: 80%;
+    }
+    .image {
+        .paragraph {
+            width: 60%;
+        }
+    }
+    section {
+        .box-left {
+            width: 70%;
+            .container {
+                margin-left: 0rem;
+            }
+        }
+        .box-right {
+            width: 30%;
+        }
+    }
+    .instructions {
+        .information {
+            width: 53%;
+        }
+    }
+}
+
+@media screen and (max-width: $deskto3) {
+    .container {
+        width: 90%;
+    }
+    .image {
+        .paragraph {
+            width: 60%;
+        }
+    }
+    .instructions {
+        .information {
+            width: 62%;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile ) and (min-width: $mobile) {
+    .container {
+        width: 95%;
+    }
+    .image{
+        margin-top: 1.5rem;
+        h1 {
+            font-size: 24px;
+        }
+        .paragraph {
+            width: 100%;
+            margin: -1rem 0 1rem 0;
+            line-height: 1rem;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    section {
+        flex-direction: column-reverse;
+        .box-left {
+        }
+        .box-right {
+            margin-top: -1.5rem;
+            width: 100%;
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+                height: 100px;
+                border-radius: 0;
+                box-shadow: none;
+                .info {
+                    margin: 0.2rem 0;
+                    width: 33%;
+                    span {
+                        margin-right: 0.3rem;
+                        font-size: 24px;
+                    }
+                    .box {
+                        .title {
+                            font-size: 8px;
+                        }
+                        .subtitle {
+                            margin-top: -0.5rem;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .special {
+                    width: 100%;
                 }
             }
         }

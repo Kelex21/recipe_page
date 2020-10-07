@@ -39,7 +39,7 @@ body {
   display: flex;
   margin: -2rem 0 2rem 0;
   align-items: flex-start;
-  width: 45%;
+  width: 44%;
 }
 .image .paragraph .drag {
   margin-top: 0.8rem;
@@ -252,20 +252,20 @@ footer p a:hover {
     width: 53%;
   }
 }
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1068px) and (min-width: 1068px) {
   .container {
     width: 90%;
   }
 
   .image .paragraph {
-    width: 60%;
+    width: 62%;
   }
 
   .instructions .information {
     width: 62%;
   }
 }
-@media screen and (max-width: 375px) and (min-width: 375px) {
+@media screen and (max-width: 411px) {
   .container {
     width: 95%;
   }
@@ -287,6 +287,27 @@ footer p a:hover {
 
   section {
     flex-direction: column-reverse;
+  }
+  section .box-left {
+    width: 100%;
+    margin-top: -1rem;
+  }
+  section .box-left .title {
+    font-size: 18px;
+  }
+  section .box-left .subtitle {
+    margin: 1rem 0 2rem 0;
+    font-size: 16px;
+  }
+  section .box-left .container {
+    width: 100%;
+  }
+  section .box-left .container .box {
+    margin: 0;
+  }
+  section .box-left .container .box p {
+    font-size: 14px;
+    margin-left: 2rem;
   }
   section .box-right {
     margin-top: -1.5rem;
@@ -319,6 +340,19 @@ footer p a:hover {
   }
   section .box-right .container .special {
     width: 100%;
+  }
+
+  .instructions {
+    margin-top: 0.3rem;
+  }
+  .instructions .information {
+    width: 100%;
+  }
+  .instructions .information .source {
+    margin: 2rem 0 2rem 0;
+  }
+  .instructions .information .source p {
+    font-size: 12px;
   }
 }
 

@@ -38,7 +38,7 @@ body {
         display: flex;
         margin: -2rem 0 2rem 0;
         align-items: flex-start;
-        width: 45%;
+        width: 44%;
         .drag {
             margin-top: 0.8rem;
             margin-right: 0.6rem;
@@ -233,7 +233,6 @@ footer {
     }
 }
 
-
 @media screen and (max-width: $deskto2) {
     .container {
         width: 80%;
@@ -261,13 +260,13 @@ footer {
     }
 }
 
-@media screen and (max-width: $deskto3) {
+@media screen and (max-width: $deskto3) and (min-width: $deskto3) {
     .container {
         width: 90%;
     }
     .image {
         .paragraph {
-            width: 60%;
+            width: 62%;
         }
     }
     .instructions {
@@ -277,11 +276,11 @@ footer {
     }
 }
 
-@media screen and (max-width: $mobile ) and (min-width: $mobile) {
+@media screen and (max-width: $mobile) {
     .container {
         width: 95%;
     }
-    .image{
+    .image {
         margin-top: 1.5rem;
         h1 {
             font-size: 24px;
@@ -298,6 +297,25 @@ footer {
     section {
         flex-direction: column-reverse;
         .box-left {
+            width: 100%;
+            margin-top: -1rem;
+            .title {
+                font-size: 18px;
+            }
+            .subtitle {
+                margin: 1rem 0 2rem 0;
+                font-size: 16px;
+            }
+            .container {
+                width: 100%;
+                .box {
+                    margin: 0;
+                    p {
+                        font-size: 14px;
+                        margin-left: 2rem;
+                    }
+                }
+            }
         }
         .box-right {
             margin-top: -1.5rem;
@@ -330,6 +348,18 @@ footer {
                 }
                 .special {
                     width: 100%;
+                }
+            }
+        }
+    }
+    .instructions {
+        margin-top: 0.3rem;
+        .information {
+            width: 100%;
+            .source {
+                margin: 2rem 0 2rem 0;
+                p {
+                    font-size: 12px;
                 }
             }
         }

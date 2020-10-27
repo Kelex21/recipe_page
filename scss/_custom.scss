@@ -92,10 +92,19 @@ section {
                 .cube {
                     position: absolute;
                     width: 21px;
-                    align-self: flex-start;
                     height: 21px;
                     border: 1px solid #828282;
+                    align-self: flex-start;
                     border-radius: 4px;
+                    &:after {
+                        content: "\f00c";
+                        font-family: FontAwesome;
+                        font-weight: normal;
+                        font-style: normal;
+                        margin: 0px 0px 0px 5px;
+                        text-decoration: none;
+                        color: $orange;
+                    }
                 }
                 p {
                     font-family: $montserrat;

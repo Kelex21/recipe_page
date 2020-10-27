@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -94,10 +95,19 @@ section .box-left .container .box {
 section .box-left .container .box .cube {
   position: absolute;
   width: 21px;
-  align-self: flex-start;
   height: 21px;
   border: 1px solid #828282;
+  align-self: flex-start;
   border-radius: 4px;
+}
+section .box-left .container .box .cube:after {
+  content: "";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 5px;
+  text-decoration: none;
+  color: #f2994a;
 }
 section .box-left .container .box p {
   font-family: "Montserrat", sans-serif;
